@@ -1,8 +1,8 @@
 import React from "react";
 
 //Styles
-import {About, Services, Cards, Card, Description, Image} from '../styles';
-import styled from 'styled-components';
+import {Faq} from '../styles';
+// import styled from 'styled-components';
 
 const FaqSection = () => {
     return (
@@ -56,41 +56,39 @@ const FaqSection = () => {
     );
 };
 
-const Faq = styled(About)`
+// const Faq = styled(About)`
 
-    display: block;
+//     display: block;
 
-    span {
-        display: block;
-    }
+//     span {
+//         display: block;
+//     }
 
-    h2 {
-        padding-bottom: 2rem;
-        font-weight: lighter;
-    }
+//     h2 {
+//         padding-bottom: 2rem;
+//         font-weight: lighter;
+//     }
 
-    .faq-line {
-        background: #ccc;
-        height: 0.2rem;
-        margin: 2rem 0;
-        width: 100%;
-    }
+//     .faq-line {
+//         background: #ccc;
+//         height: 0.2rem;
+//         margin: 2rem 0;
+//         width: 100%;
+//     }
 
-    .question {
-        padding: 2rem 0;
-        cursor: pointer;
-    }
+//     .question {
+//         padding: 2rem 0;
+//         cursor: pointer;
+//     }
 
-    .answer {
-        padding: 1rem 0;
+//     .answer {
+//         padding: 1rem 0;
 
-        p {
-            padding: 1rem 0;
-        }
-    }
+//         p {
+//             padding: 1rem 0;
+//         }
+//     }
 
-
-    
-`;
+// `;
 
 export default FaqSection;
