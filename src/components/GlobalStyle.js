@@ -46,7 +46,8 @@ h3 {
 
 h4 {
     font-weight: bold;
-    color: #23d997;
+    font-size: 2rem;
+    /* color: #23d997; */
 }
 
 span {

@@ -7,7 +7,7 @@ export const About = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 10rem;
+    padding: 5rem;
     color: white;
 `;
 
@@ -48,6 +48,7 @@ export const Services = styled(About)`
 
 `;
 
+// Cards Section /////////////////////////////////////
 export const Cards = styled.div`
 
 display: flex;
@@ -57,3 +58,21 @@ flex-wrap: wrap;
 /* background-color: #3f0606; */
 
 `;
+
+export const Card = styled.div`
+
+    flex-basis: 20rem;
+    .icon {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            margin-left: 1rem;
+            background: white;
+            color: black;
+            padding: 1rem;
+        }
+    }
+
+`;
+//////////////////////////////////////////////////////

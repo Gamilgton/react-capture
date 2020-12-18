@@ -1,9 +1,13 @@
 import React from "react";
 
+//Styles
+import {About, Services, Cards, Card, Description, Image} from '../styles';
+import styled from 'styled-components';
+
 const FaqSection = () => {
     return (
-        <div className="faq">
-            <h3>Any questions <span>FAQ</span></h3>
+        <Faq>
+            <h2>Any questions? <span>FAQ</span></h2>
 
             <div className="question">
                 <h4>How do I start?</h4>
@@ -12,7 +16,7 @@ const FaqSection = () => {
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, consequuntur, dolor libero excepturi sapiente porro beatae vero ratione soluta nobis numquam recusandae aspernatur tempora corrupti, saepe doloremque quia? Delectus, neque!</p>
                 </div>
-
+                <div className="faq-line"></div>
             </div>
 
             <div className="question">
@@ -22,6 +26,7 @@ const FaqSection = () => {
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, consequuntur, dolor libero excepturi sapiente porro beatae vero ratione soluta nobis numquam recusandae aspernatur tempora corrupti, saepe doloremque quia? Delectus, neque!</p>
                 </div>
+                <div className="faq-line"></div>
 
             </div>
 
@@ -32,6 +37,7 @@ const FaqSection = () => {
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, consequuntur, dolor libero excepturi sapiente porro beatae vero ratione soluta nobis numquam recusandae aspernatur tempora corrupti, saepe doloremque quia? Delectus, neque!</p>
                 </div>
+                <div className="faq-line"></div>
 
             </div>
 
@@ -42,11 +48,49 @@ const FaqSection = () => {
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, consequuntur, dolor libero excepturi sapiente porro beatae vero ratione soluta nobis numquam recusandae aspernatur tempora corrupti, saepe doloremque quia? Delectus, neque!</p>
                 </div>
+                <div className="faq-line"></div>
 
             </div>
 
-        </div>
+        </Faq>
     );
 };
+
+const Faq = styled(About)`
+
+    display: block;
+
+    span {
+        display: block;
+    }
+
+    h2 {
+        padding-bottom: 2rem;
+        font-weight: lighter;
+    }
+
+    .faq-line {
+        background: #ccc;
+        height: 0.2rem;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    .question {
+        padding: 2rem 0;
+        cursor: pointer;
+    }
+
+    .answer {
+        padding: 1rem 0;
+
+        p {
+            padding: 1rem 0;
+        }
+    }
+
+
+    
+`;
 
 export default FaqSection;
