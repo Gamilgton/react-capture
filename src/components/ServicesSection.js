@@ -8,8 +8,8 @@ import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 
 //Styles
-import {Services, Cards, Description, Image} from '../styles';
-import styled from 'styled-components';
+import {Services, Cards, Card, Description, Image} from '../styles';
+// import styled from 'styled-components';
 
 
 const ServicesSection = () => {
@@ -92,21 +92,21 @@ const ServicesSection = () => {
 
 // `;
 
-const Card = styled.div`
+// const Card = styled.div`
 
-    flex-basis: 20rem;
-    .icon {
-        display: flex;
-        align-items: center;
+//     flex-basis: 20rem;
+//     .icon {
+//         display: flex;
+//         align-items: center;
 
-        h3 {
-            margin-left: 1rem;
-            background: white;
-            color: black;
-            padding: 1rem;
-        }
-    }
+//         h3 {
+//             margin-left: 1rem;
+//             background: white;
+//             color: black;
+//             padding: 1rem;
+//         }
+//     }
 
-`;
+// `;
 
 export default ServicesSection;
