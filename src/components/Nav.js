@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Styles
-import {Navigation} from '../styles';
+import {Navigation} from '../styles/componentStyles';
 // import styled from 'styled-components';
 
 // Router

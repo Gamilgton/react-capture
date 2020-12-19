@@ -3,7 +3,10 @@ import home1 from '../img/home1.png';
 
 // Styled
 // import styled from 'styled-components';
-import {About, Description, Image, Hide} from '../styles';
+import {About, Description, Image, Hide} from '../styles/componentStyles';
+
+// Framer Motion
+import {motion} from 'framer-motion';
 
 
 const AboutSection = () => {
@@ -13,7 +16,13 @@ const AboutSection = () => {
                 <div className="title">
 
                     <Hide>
-                        <h2>We work to make a beauty</h2>
+                        <motion.h2 
+                            animate={{opacity: 1,
+                                transition: { duration: 1.3}}}
+                            initial={{opacity: 0}}
+                        >
+                            We work to make a beauty
+                        </motion.h2>
                     </Hide>
 
                     <Hide>

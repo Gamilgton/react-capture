@@ -1,7 +1,8 @@
 import React from 'react';
 
 // Styles
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import {Work, Movie} from '../styles/pageStyles';
 
 // Router
 import {Link} from 'react-router-dom';
@@ -17,7 +18,7 @@ const OurWork = () => {
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/the-athlete">
                     <img src={athlete} alt="athlete"/>
                 </Link>
             </Movie>
@@ -25,7 +26,7 @@ const OurWork = () => {
             <Movie>
                 <h2>The Racer</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/the-racer">
                     <img src={theracer} alt="theracer"/>
                 </Link>
                 
@@ -34,7 +35,7 @@ const OurWork = () => {
             <Movie>
                 <h2>Good Times</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/good-times">
                     <img src={goodtimes} alt="goodtimes"/>
                 </Link>
                 
@@ -43,35 +44,35 @@ const OurWork = () => {
     );
 };
 
-const Work = styled.div`
+// const Work = styled.div`
 
-    min-height: 100vh;
-    overflow: hidden;
-    padding: 5rem;
+//     min-height: 100vh;
+//     overflow: hidden;
+//     padding: 5rem;
 
-    h2 {
-        color: white;
-        padding: 1rem 0;
-    }
+//     h2 {
+//         color: white;
+//         padding: 1rem 0;
+//     }
 
-`;
+// `;
 
-const Movie = styled.div`
+// const Movie = styled.div`
 
-    padding-bottom: 5rem;
+//     padding-bottom: 5rem;
 
-    .line {
-        height: 0.5rem;
-        background: #ccc;
-        margin-bottom: 3rem;
-    }
+//     .line {
+//         height: 0.5rem;
+//         background: #ccc;
+//         margin-bottom: 3rem;
+//     }
 
-    img {
-            width: 100%;
-            height: 80vh;
-            object-fit: cover;
-        }
+//     img {
+//             width: 100%;
+//             height: 80vh;
+//             object-fit: cover;
+//         }
 
-`;
+// `;
 
 export default OurWork;

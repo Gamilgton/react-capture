@@ -8,7 +8,7 @@ import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 
 //Styles
-import {Services, Cards, Card, Description, Image} from '../styles';
+import {Services, Cards, Card, Description, Image} from '../styles/componentStyles';
 // import styled from 'styled-components';
 
 
