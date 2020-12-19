@@ -4,6 +4,10 @@ import React from 'react';
 // import styled from 'styled-components';
 import {Work, Movie} from '../styles/pageStyles';
 
+// Framer Motion
+import {motion} from 'framer-motion';
+import {appAnimation} from '../styles/animation';
+
 // Router
 import {Link} from 'react-router-dom';
 
@@ -14,7 +18,12 @@ import goodtimes from '../img/goodtimes-small.png';
 
 const OurWork = () => {
     return (
-        <Work>
+        <Work
+            variants={appAnimation.pageAnimation}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+        >
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>

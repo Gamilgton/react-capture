@@ -1,10 +1,19 @@
 import React from 'react';
 
+// Framer Motion
+import {motion} from 'framer-motion';
+import {appAnimation} from '../styles/animation';
+
 const OurWork = () => {
     return (
-        <div>
+        <motion.div
+            variants={appAnimation.pageAnimation}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+        >
             <h1>ContactUs</h1>
-        </div>        
+        </motion.div>        
     );
 };
 

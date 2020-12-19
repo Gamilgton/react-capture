@@ -2,6 +2,8 @@ import React from 'react';
 
 // Import Global Style
 import GlobalStyle from './components/GlobalStyle';
+import {motion, AnimatePresence} from 'framer-motion';
+import {appAnimation} from './styles/animation';
 
 // Import pages
 import AboutUs from './pages/AboutUs';
@@ -13,30 +15,46 @@ import MovieDetail from './pages/MovieDetail';
 import Nav from './components/Nav';
 
 // Router
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, useLocation} from 'react-router-dom';
 
 function App() {
+
+  const location = useLocation();
+  console.log(location);
+
   return (
-    <div className="App">
+    <motion.div className="App" variants={appAnimation.fadeIn_1s}
+    initial="hidden"
+    animate="show"
+    >
 
       <GlobalStyle />
       <Nav />
-      <Switch>
-        <Route path="/" exact>
-          <AboutUs />
-        </Route>
-        <Route path="/work" exact>
-          <OurWork />
-        </Route>
-        <Route path="/work/:id">
-          <MovieDetail />
-        </Route>
-        <Route path="/contact">
-          <ContactUs />
-        </Route>
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch
+          location={location} key={location.pathname}
+        >
+
+          <Route path="/" exact>
+            <AboutUs />
+          </Route>
+
+          <Route path="/work" exact>
+            <OurWork />
+          </Route>
+
+          <Route path="/work/:id">
+            <MovieDetail />
+          </Route>
+
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
+
+        </Switch>
+      </AnimatePresence>
       
-    </div>
+    </motion.div>
   );
 }
 
