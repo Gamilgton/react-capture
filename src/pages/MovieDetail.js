@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import {Details, Awards, AwardStyle, ImageDisplay, HeadLine} from '../styles/pageStyles';
 // Framer Motion
-import {motion} from 'framer-motion';
+// import {motion} from 'framer-motion';
 import {appAnimation} from '../styles/animation';
 
 import {useHistory} from 'react-router-dom';

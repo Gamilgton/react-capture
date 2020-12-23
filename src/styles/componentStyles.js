@@ -129,6 +129,11 @@ export const Navigation = styled.div`
     align-items: center;
     padding: 1rem 5rem;
     background: #23d997;
+    opacity: 0.95;
+    // Fix the navigation
+    position: sticky;
+    top: 0;
+    z-index: 5;
 
 a {
     color: white;

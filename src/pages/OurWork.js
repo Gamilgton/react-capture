@@ -1,8 +1,9 @@
 import React from 'react';
+import ScrollUp from "../components/ScrollUp";
 
 // Styles
 // import styled from 'styled-components';
-import {Work, Movie, Frame1, Frame2, Frame3, Frame4} from '../styles/pageStyles';
+import {Work, Movie} from '../styles/pageStyles';
 
 // Framer Motion
 import {motion} from 'framer-motion';
@@ -84,6 +85,7 @@ const OurWork = () => {
                 </Link>
                 
             </Movie>
+            <ScrollUp/>
         </Work>        
     );
 };

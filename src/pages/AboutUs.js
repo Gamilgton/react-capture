@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollUp from "../components/ScrollUp";
 
 // Page Components
 import AboutSection from '../components/AboutSection';
@@ -22,6 +23,7 @@ const AboutUs = () => {
             <ServicesSection />
             <FaqSection />
 
+            <ScrollUp/>
         </motion.div>    
         
     );

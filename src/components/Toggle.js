@@ -1,6 +1,5 @@
 import React, {Children, useState} from 'react';
 import {motion} from 'framer-motion';
-import {appAnimation} from '../styles/animation';
 
 const Toggle = ({children, title}) => {
 

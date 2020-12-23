@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollUp from "../components/ScrollUp";
 
 // Framer Motion
 import {motion} from 'framer-motion';
@@ -31,6 +32,7 @@ const OurWork = () => {
                     <h4><a href="mailto: andreykachar@gmail.com">andreykachar@gmail.com</a></h4>
                 </Social>
             </div>
+            <ScrollUp/>
         </ContactStyle>        
     );
 };
