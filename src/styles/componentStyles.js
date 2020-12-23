@@ -12,6 +12,7 @@ export const About = styled.div`
 `;
 
 export const Description = styled.div`
+    z-index: 2;
     flex: 1;
     padding-right: 5rem;
 
@@ -25,6 +26,7 @@ export const Image = styled.div`
     overflow: hidden;
 
     img {
+        /* z-index: 1; */
         width: 100%;
         height: 80vh;
         object-fit: cover;
@@ -147,5 +149,15 @@ li {
     font-family: 'Lobster', cursive;
     font-weight: lighter;
 }
+
+`;
+//////////////////////////////////////////////////////
+
+// Wave //////////////////////////////////////////////
+export const WaveSvg = styled.svg`
+
+    position: absolute;
+    left: 0;
+    z-index: -1;
 
 `;

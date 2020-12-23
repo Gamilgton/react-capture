@@ -8,6 +8,7 @@ import {About, Description, Image, Hide} from '../styles/componentStyles';
 // Framer Motion
 import {motion} from 'framer-motion';
 import {appAnimation} from '../styles/animation';
+import Wave from './Wave';
 
 
 const AboutSection = () => {
@@ -63,8 +64,10 @@ const AboutSection = () => {
             </Description>
 
             <Image>
-                <img src={home1} alt="dude with a camera"/>
+                <motion.img variants={appAnimation.photoAnimation} src={home1} alt="dude with a camera"/>
             </Image>
+
+            <Wave />
             
         </About>
     );
