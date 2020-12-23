@@ -112,11 +112,11 @@ export const appAnimation =  {
 
     sliderContainer: {
         hidden: {
-            opacity: 0,
+            opacity: 0.5,
         },
 
         show: {
-            opacity: 0.85,
+            opacity: 1,
             transition: {
                 staggerChildren: 0.15,
                 ease: 'easeOut',
@@ -127,12 +127,12 @@ export const appAnimation =  {
     sliderAnimation: {
         hidden: {
             x: '-130%',
-            skew: '45deg',
+            skew: '-45deg',
         },
 
         show: {
-            x: '100%',
-            skew: '0deg',
+            x: '130%',
+            skew: '-45deg',
             transition: {
                 ease: 'easeOut',
                 duration: 0.75
