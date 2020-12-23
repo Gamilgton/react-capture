@@ -101,6 +101,59 @@ export const ImageDisplay = styled.div`
 
 `;
 
+// Contact
+
+export const ContactStyle = styled(motion.div)`
+
+    /* width: 100%; */
+    height: 20%;
+    padding: 5rem 10rem;
+    color: #353535;
+    min-height: 90vh;
+
+`;
+
+export const Title = styled(motion.div)`
+
+    /* background: #fff; */
+    margin-bottom: 4rem;
+    color: black;
+
+`;
+
+export const Hide = styled.div`
+
+    overflow: hidden;
+
+`;
+
+export const Circle = styled.div`
+
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background: #353535;
+
+`;
+
+export const Social = styled(motion.div)`
+
+    display: flex;
+    align-items: center;
+
+    h2 {
+        margin: 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #353535
+    }
+
+`;
+////////////////////////////////////////////////
+
+// Slider ////////////////////////////////
 export const Frame1 = styled(motion.div)`
 
     position: fixed;
@@ -130,3 +183,4 @@ export const Frame4 = styled(Frame1)`
 background: #8eff80;
 
 `;
+////////////////////////////////////////////////

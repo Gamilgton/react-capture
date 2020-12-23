@@ -4,6 +4,8 @@ import React from 'react';
 import GlobalStyle from './components/GlobalStyle';
 import {motion, AnimatePresence} from 'framer-motion';
 import {appAnimation} from './styles/animation';
+
+// Slider between pages
 import {slider} from './components/Slider'
 
 // Import pages
@@ -33,7 +35,9 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
 
+        {/* Slider between pages */}
         {slider()}
+        {/* //////////////////// */}
 
         <Switch
           location={location} key={location.pathname}
