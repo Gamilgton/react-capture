@@ -64,7 +64,10 @@ const AboutSection = () => {
             </Description>
 
             <Image>
-                <motion.img variants={appAnimation.photoAnimation} src={home1} alt="dude with a camera"/>
+                <motion.img
+                // variants={appAnimation.photoAnimation}
+                src={home1}
+                alt="dude with a camera"/>
             </Image>
 
             <Wave />

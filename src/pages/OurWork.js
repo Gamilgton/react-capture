@@ -2,7 +2,7 @@ import React from 'react';
 
 // Styles
 // import styled from 'styled-components';
-import {Work, Movie} from '../styles/pageStyles';
+import {Work, Movie, Frame1, Frame2, Frame3, Frame4} from '../styles/pageStyles';
 
 // Framer Motion
 import {motion} from 'framer-motion';
@@ -24,9 +24,23 @@ const OurWork = () => {
             animate="show"
             exit="exit"
         >
+            <motion.div
+                variants={appAnimation.sliderContainer}
+                initial='hidden'
+                animate='show'
+            >
+                <Frame1 variants={appAnimation.sliderAnimation}></Frame1>
+                <Frame2 variants={appAnimation.sliderAnimation}></Frame2>
+                <Frame3 variants={appAnimation.sliderAnimation}></Frame3>
+                <Frame4 variants={appAnimation.sliderAnimation}></Frame4>
+            </motion.div>
+
             <Movie>
                 <h2>The Athlete</h2>
-                <div className="line"></div>
+                <motion.div
+                    className="line"
+                    variants={appAnimation.lineAnimation}
+                ></motion.div>
                 <Link to="/work/the-athlete">
                     <img src={athlete} alt="athlete"/>
                 </Link>
@@ -34,7 +48,10 @@ const OurWork = () => {
 
             <Movie>
                 <h2>The Racer</h2>
-                <div className="line"></div>
+                <motion.div
+                    className="line"
+                    variants={appAnimation.lineAnimation}
+                ></motion.div>
                 <Link to="/work/the-racer">
                     <img src={theracer} alt="theracer"/>
                 </Link>
@@ -43,7 +60,10 @@ const OurWork = () => {
 
             <Movie>
                 <h2>Good Times</h2>
-                <div className="line"></div>
+                <motion.div
+                    className="line"
+                    variants={appAnimation.lineAnimation}
+                ></motion.div>
                 <Link to="/work/good-times">
                     <img src={goodtimes} alt="goodtimes"/>
                 </Link>

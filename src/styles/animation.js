@@ -91,6 +91,56 @@ export const appAnimation =  {
             scale: 5,
             opacyti: 0,
         }
-    }
+    },
 
-}
+    // Line Animation
+    lineAnimation: {
+        hidden: {
+            width: '0%',
+        },
+
+        show: {
+            width: '100%',
+            transition: {
+                duration: 1.5,
+            },
+        },
+    },
+    ///////////////////////////////////////////////////
+
+    // Slider Animation
+
+    sliderContainer: {
+        hidden: {
+            opacity: 0,
+        },
+
+        show: {
+            opacity: 0.85,
+            transition: {
+                staggerChildren: 0.15,
+                ease: 'easeOut',
+            }
+        }
+    },
+
+    sliderAnimation: {
+        hidden: {
+            x: '-130%',
+            skew: '45deg',
+        },
+
+        show: {
+            x: '100%',
+            skew: '0deg',
+            transition: {
+                ease: 'easeOut',
+                duration: 0.75
+            },
+        },
+    },
+    ///////////////////////////////////////////////////
+    
+
+
+};
