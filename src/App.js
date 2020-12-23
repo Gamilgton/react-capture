@@ -4,6 +4,7 @@ import React from 'react';
 import GlobalStyle from './components/GlobalStyle';
 import {motion, AnimatePresence} from 'framer-motion';
 import {appAnimation} from './styles/animation';
+import {slider} from './components/Slider'
 
 // Import pages
 import AboutUs from './pages/AboutUs';
@@ -31,6 +32,9 @@ function App() {
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>
+
+        {slider()}
+
         <Switch
           location={location} key={location.pathname}
         >

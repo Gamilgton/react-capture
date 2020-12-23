@@ -7,6 +7,7 @@ import {Work, Movie, Frame1, Frame2, Frame3, Frame4} from '../styles/pageStyles'
 // Framer Motion
 import {motion} from 'framer-motion';
 import {appAnimation} from '../styles/animation';
+import {useScroll} from '../components/UseScroll';
 
 // Router
 import {Link} from 'react-router-dom';
@@ -17,6 +18,10 @@ import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
 
 const OurWork = () => {
+
+    const [element, controls] = useScroll();
+    const [element2, controls2] = useScroll();
+
     return (
         <Work
             variants={appAnimation.pageAnimation}
@@ -24,7 +29,7 @@ const OurWork = () => {
             animate="show"
             exit="exit"
         >
-            <motion.div
+            {/* <motion.div
                 variants={appAnimation.sliderContainer}
                 initial='hidden'
                 animate='show'
@@ -33,7 +38,7 @@ const OurWork = () => {
                 <Frame2 variants={appAnimation.sliderAnimation}></Frame2>
                 <Frame3 variants={appAnimation.sliderAnimation}></Frame3>
                 <Frame4 variants={appAnimation.sliderAnimation}></Frame4>
-            </motion.div>
+            </motion.div> */}
 
             <Movie>
                 <h2>The Athlete</h2>
@@ -46,7 +51,12 @@ const OurWork = () => {
                 </Link>
             </Movie>
 
-            <Movie>
+            <Movie
+                ref={element}
+                variants={appAnimation.scrollReveal}
+                animate={controls}
+                initial='hidden'
+            >
                 <h2>The Racer</h2>
                 <motion.div
                     className="line"
@@ -58,7 +68,12 @@ const OurWork = () => {
                 
             </Movie>
 
-            <Movie>
+            <Movie
+                ref={element2}
+                variants={appAnimation.scrollReveal}
+                animate={controls2}
+                initial='hidden'
+            >
                 <h2>Good Times</h2>
                 <motion.div
                     className="line"

@@ -15,7 +15,7 @@ h2 {
 `;
 
 
-export const Movie = styled.div`
+export const Movie = styled(motion.div)`
 
     padding-bottom: 5rem;
 
