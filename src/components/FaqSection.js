@@ -5,11 +5,21 @@ import Toggle from './Toggle';
 import {Faq} from '../styles/componentStyles';
 // import styled from 'styled-components';
 import {AnimateSharedLayout} from 'framer-motion';
+import {appAnimation} from '../styles/animation';
+
+import {useScroll} from './UseScroll';
 
 const FaqSection = () => {
 
+    const [element, controls] = useScroll();
+
     return (
-        <Faq>
+        <Faq
+            ref={element}
+            variants={appAnimation.scrollReveal}
+            animate={controls}
+            initial='hidden'
+        >
             <h2>
                 Any questions? <span>FAQ</span>
             </h2>

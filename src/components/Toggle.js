@@ -4,7 +4,7 @@ import {appAnimation} from '../styles/animation';
 
 const Toggle = ({children, title}) => {
 
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
     return (
 

@@ -40,8 +40,15 @@ export const appAnimation =  {
             },
         },
     },
+    ///////////////////////////////////////////////////
 
-    // Fade In
+    // Fade In ////////////////////////////////////////
+
+    fadeIn_05s: {
+        hidden: {opacity: 0},
+        show: {opacity: 1, transition: { duration: 0.5}},
+    },
+
     fadeIn_1s: {
         hidden: {opacity: 0},
         show: {opacity: 1, transition: { duration: 1}},
@@ -72,7 +79,7 @@ export const appAnimation =  {
 
     ///////////////////////////////////////////////////
 
-    // Photo Animation
+    // Photo Animation ////////////////////////////////
     photoAnimation: {
         hidden: {
             scale: 1.5,
@@ -92,6 +99,7 @@ export const appAnimation =  {
             opacyti: 0,
         }
     },
+    ///////////////////////////////////////////////////
 
     // Line Animation
     lineAnimation: {
@@ -108,7 +116,7 @@ export const appAnimation =  {
     },
     ///////////////////////////////////////////////////
 
-    // Slider Animation
+    // Slider Animation ///////////////////////////////
 
     sliderContainer: {
         hidden: {
@@ -141,6 +149,20 @@ export const appAnimation =  {
     },
     ///////////////////////////////////////////////////
     
+    // Scroll Reveal //////////////////////////////////
+    scrollReveal: {
+        hidden: {
+            opacity: 0,
+            scale: 1.1,
+        },
 
+        show: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                duration: 0.5,
+            }
+        }
+    },
 
 };
